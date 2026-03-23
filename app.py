@@ -149,11 +149,12 @@ with col1:
 
 with col2:
     if uploaded and analyze_btn:
-        image = Image.open(uploaded).convert("RGB")
-        st.image(image, use_container_width=True)
+        file_bytes = np.asarray(bytearray(uploaded.read()), dtype=np.uint8)
+        image_array = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
+        st.image(cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB), use_container_width=True)
 
         with st.spinner("Analyzing your food..."):
-            food_name, confidence = identify_food(image)
+            food_name, confidence = identify_food(image_array)
             nutrition             = NUTRITION_DB.get(food_name, {})
             condition_key         = condition.lower().replace(" ", "_")
             guidelines            = GUIDELINES.get(condition_key, {})
