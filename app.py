@@ -5,7 +5,7 @@ import json
 import requests
 import os
 import gdown
-from PIL import Image
+import cv2
 
 # ── Download model from Google Drive ─────────────────────
 @st.cache_resource
@@ -57,23 +57,20 @@ FREE_MODELS = [
 ]
 
 # ── Functions ─────────────────────────────────────────────
-def preprocess_image(image):
-    img = image.resize((224, 224))
-    img = np.array(img).astype(np.float32)
-    # MobileNetV2 preprocessing
-    img = img / 127.5 - 1.0
-    img = np.expand_dims(img, axis=0)
-    return img
+def preprocess_image(image_array):
+    img = cv2.resize(image_array, (224, 224))
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    img = img.astype(np.float32) / 127.5 - 1.0
+    return np.expand_dims(img, axis=0)
 
-def identify_food(image):
-    img        = preprocess_image(image)
+def identify_food(image_array):
+    img        = preprocess_image(image_array)
     input_name = session.get_inputs()[0].name
     outputs    = session.run(None, {input_name: img})
     predictions = outputs[0][0]
     top_idx     = np.argmax(predictions)
-    confidence  = float(predictions[top_idx] * 100)
-    return CLASS_NAMES[top_idx], confidence
-
+    return CLASS_NAMES[top_idx], float(predictions[top_idx] * 100)
+    
 def get_advice(food_name, nutrition, condition, guidelines):
     prompt = f"""You are NutriVision AI, a friendly nutrition assistant.
 Food: {food_name.replace("_"," ").title()}
