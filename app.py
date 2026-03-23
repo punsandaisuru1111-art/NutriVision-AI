@@ -1,5 +1,5 @@
 import streamlit as st
-import onnxruntime as ort
+import onnxruntime
 import numpy as np
 import json
 import requests
@@ -18,7 +18,7 @@ def load_model():
             model_path,
             quiet=False
         )
-    session = ort.InferenceSession(model_path)
+    session = onnxruntime.InferenceSession(model_path)
     return session
 
 # ── Load data files ───────────────────────────────────────
