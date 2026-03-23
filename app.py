@@ -1,5 +1,5 @@
 import streamlit as st
-import tensorflow as tf
+import onnxruntime as ort
 import numpy as np
 import json
 import requests
@@ -10,15 +10,16 @@ from PIL import Image
 # ── Download model from Google Drive ─────────────────────
 @st.cache_resource
 def load_model():
-    model_path = "nutrivision_model_final.keras"
+    model_path = "nutrivision_model.onnx"
     if not os.path.exists(model_path):
-        st.info("Downloading model for first time... please wait 1 minute")
+        st.info("Downloading model for first time... please wait")
         gdown.download(
-            "https://drive.google.com/uc?id=1tY0XKSjqHu2kuz6NB-FGeWSwiME_bBei",
+            "https://drive.google.com/uc?id=1PDSmmZfU96B5ntNQ8X775a4IwLZkRWx8",
             model_path,
             quiet=False
         )
-    return tf.keras.models.load_model(model_path)
+    session = ort.InferenceSession(model_path)
+    return session
 
 # ── Load data files ───────────────────────────────────────
 @st.cache_resource
@@ -44,7 +45,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Load everything ───────────────────────────────────────
-model = load_model()
+session = load_model()
 CLASS_NAMES, NUTRITION_DB, GUIDELINES = load_data()
 
 OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
@@ -56,13 +57,22 @@ FREE_MODELS = [
 ]
 
 # ── Functions ─────────────────────────────────────────────
+def preprocess_image(image):
+    img = image.resize((224, 224))
+    img = np.array(img).astype(np.float32)
+    # MobileNetV2 preprocessing
+    img = img / 127.5 - 1.0
+    img = np.expand_dims(img, axis=0)
+    return img
+
 def identify_food(image):
-    img = tf.image.resize(tf.constant(np.array(image)), (224, 224))
-    img = tf.keras.applications.mobilenet_v2.preprocess_input(img)
-    img = tf.expand_dims(img, 0)
-    predictions = model.predict(img, verbose=0)[0]
+    img        = preprocess_image(image)
+    input_name = session.get_inputs()[0].name
+    outputs    = session.run(None, {input_name: img})
+    predictions = outputs[0][0]
     top_idx     = np.argmax(predictions)
-    return CLASS_NAMES[top_idx], float(predictions[top_idx] * 100)
+    confidence  = float(predictions[top_idx] * 100)
+    return CLASS_NAMES[top_idx], confidence
 
 def get_advice(food_name, nutrition, condition, guidelines):
     prompt = f"""You are NutriVision AI, a friendly nutrition assistant.
@@ -146,11 +156,11 @@ with col2:
         st.image(image, use_container_width=True)
 
         with st.spinner("Analyzing your food..."):
-            food_name, confidence  = identify_food(image)
-            nutrition              = NUTRITION_DB.get(food_name, {})
-            condition_key          = condition.lower().replace(" ", "_")
-            guidelines             = GUIDELINES.get(condition_key, {})
-            advice                 = get_advice(food_name, nutrition, condition, guidelines)
+            food_name, confidence = identify_food(image)
+            nutrition             = NUTRITION_DB.get(food_name, {})
+            condition_key         = condition.lower().replace(" ", "_")
+            guidelines            = GUIDELINES.get(condition_key, {})
+            advice                = get_advice(food_name, nutrition, condition, guidelines)
 
         st.markdown(f"### {food_name.replace('_',' ').title()}")
         st.caption(f"Confidence: {confidence:.1f}%")
