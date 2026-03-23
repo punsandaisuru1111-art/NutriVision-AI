@@ -1,0 +1,810 @@
+{
+  "apple_pie": {
+    "calories": 296,
+    "protein_g": 2.4,
+    "sugar_g": 22,
+    "sodium_mg": 251,
+    "fat_g": 13.8,
+    "name": "apple pie"
+  },
+  "baby_back_ribs": {
+    "calories": 330,
+    "protein_g": 25,
+    "sugar_g": 5,
+    "sodium_mg": 490,
+    "fat_g": 24,
+    "name": "baby back ribs"
+  },
+  "baklava": {
+    "calories": 334,
+    "protein_g": 5,
+    "sugar_g": 25,
+    "sodium_mg": 290,
+    "fat_g": 23,
+    "name": "baklava"
+  },
+  "beef_carpaccio": {
+    "calories": 163,
+    "protein_g": 18,
+    "sugar_g": 0,
+    "sodium_mg": 320,
+    "fat_g": 9,
+    "name": "beef carpaccio"
+  },
+  "beef_tartare": {
+    "calories": 196,
+    "protein_g": 20,
+    "sugar_g": 0,
+    "sodium_mg": 380,
+    "fat_g": 12,
+    "name": "beef tartare"
+  },
+  "beet_salad": {
+    "calories": 110,
+    "protein_g": 3,
+    "sugar_g": 9,
+    "sodium_mg": 180,
+    "fat_g": 6,
+    "name": "beet salad"
+  },
+  "beignets": {
+    "calories": 320,
+    "protein_g": 5,
+    "sugar_g": 18,
+    "sodium_mg": 260,
+    "fat_g": 16,
+    "name": "beignets"
+  },
+  "bibimbap": {
+    "calories": 490,
+    "protein_g": 26,
+    "sugar_g": 8,
+    "sodium_mg": 810,
+    "fat_g": 15,
+    "name": "bibimbap"
+  },
+  "bread_pudding": {
+    "calories": 305,
+    "protein_g": 7,
+    "sugar_g": 28,
+    "sodium_mg": 280,
+    "fat_g": 12,
+    "name": "bread pudding"
+  },
+  "breakfast_burrito": {
+    "calories": 410,
+    "protein_g": 18,
+    "sugar_g": 4,
+    "sodium_mg": 750,
+    "fat_g": 19,
+    "name": "breakfast burrito"
+  },
+  "bruschetta": {
+    "calories": 190,
+    "protein_g": 5,
+    "sugar_g": 4,
+    "sodium_mg": 390,
+    "fat_g": 8,
+    "name": "bruschetta"
+  },
+  "caesar_salad": {
+    "calories": 180,
+    "protein_g": 7,
+    "sugar_g": 2,
+    "sodium_mg": 470,
+    "fat_g": 14,
+    "name": "caesar salad"
+  },
+  "cannoli": {
+    "calories": 290,
+    "protein_g": 6,
+    "sugar_g": 20,
+    "sodium_mg": 140,
+    "fat_g": 16,
+    "name": "cannoli"
+  },
+  "caprese_salad": {
+    "calories": 200,
+    "protein_g": 11,
+    "sugar_g": 5,
+    "sodium_mg": 520,
+    "fat_g": 15,
+    "name": "caprese salad"
+  },
+  "carrot_cake": {
+    "calories": 415,
+    "protein_g": 5,
+    "sugar_g": 40,
+    "sodium_mg": 340,
+    "fat_g": 21,
+    "name": "carrot cake"
+  },
+  "ceviche": {
+    "calories": 140,
+    "protein_g": 18,
+    "sugar_g": 4,
+    "sodium_mg": 520,
+    "fat_g": 4,
+    "name": "ceviche"
+  },
+  "cheesecake": {
+    "calories": 401,
+    "protein_g": 7,
+    "sugar_g": 30,
+    "sodium_mg": 290,
+    "fat_g": 28,
+    "name": "cheesecake"
+  },
+  "cheese_plate": {
+    "calories": 380,
+    "protein_g": 20,
+    "sugar_g": 1,
+    "sodium_mg": 620,
+    "fat_g": 30,
+    "name": "cheese plate"
+  },
+  "chicken_curry": {
+    "calories": 290,
+    "protein_g": 24,
+    "sugar_g": 5,
+    "sodium_mg": 680,
+    "fat_g": 14,
+    "name": "chicken curry"
+  },
+  "chicken_quesadilla": {
+    "calories": 380,
+    "protein_g": 24,
+    "sugar_g": 2,
+    "sodium_mg": 720,
+    "fat_g": 18,
+    "name": "chicken quesadilla"
+  },
+  "chicken_wings": {
+    "calories": 430,
+    "protein_g": 35,
+    "sugar_g": 0,
+    "sodium_mg": 590,
+    "fat_g": 29,
+    "name": "chicken wings"
+  },
+  "chocolate_cake": {
+    "calories": 370,
+    "protein_g": 5,
+    "sugar_g": 38,
+    "sodium_mg": 310,
+    "fat_g": 18,
+    "name": "chocolate cake"
+  },
+  "chocolate_mousse": {
+    "calories": 280,
+    "protein_g": 5,
+    "sugar_g": 24,
+    "sodium_mg": 60,
+    "fat_g": 19,
+    "name": "chocolate mousse"
+  },
+  "churros": {
+    "calories": 375,
+    "protein_g": 5,
+    "sugar_g": 20,
+    "sodium_mg": 280,
+    "fat_g": 19,
+    "name": "churros"
+  },
+  "clam_chowder": {
+    "calories": 190,
+    "protein_g": 8,
+    "sugar_g": 5,
+    "sodium_mg": 890,
+    "fat_g": 10,
+    "name": "clam chowder"
+  },
+  "club_sandwich": {
+    "calories": 590,
+    "protein_g": 35,
+    "sugar_g": 5,
+    "sodium_mg": 980,
+    "fat_g": 28,
+    "name": "club sandwich"
+  },
+  "crab_cakes": {
+    "calories": 260,
+    "protein_g": 18,
+    "sugar_g": 2,
+    "sodium_mg": 590,
+    "fat_g": 15,
+    "name": "crab cakes"
+  },
+  "creme_brulee": {
+    "calories": 310,
+    "protein_g": 5,
+    "sugar_g": 26,
+    "sodium_mg": 60,
+    "fat_g": 20,
+    "name": "creme brulee"
+  },
+  "croque_madame": {
+    "calories": 480,
+    "protein_g": 24,
+    "sugar_g": 5,
+    "sodium_mg": 820,
+    "fat_g": 28,
+    "name": "croque madame"
+  },
+  "cup_cakes": {
+    "calories": 305,
+    "protein_g": 3,
+    "sugar_g": 30,
+    "sodium_mg": 230,
+    "fat_g": 14,
+    "name": "cup cakes"
+  },
+  "deviled_eggs": {
+    "calories": 140,
+    "protein_g": 8,
+    "sugar_g": 1,
+    "sodium_mg": 220,
+    "fat_g": 11,
+    "name": "deviled eggs"
+  },
+  "donuts": {
+    "calories": 380,
+    "protein_g": 4,
+    "sugar_g": 22,
+    "sodium_mg": 290,
+    "fat_g": 20,
+    "name": "donuts"
+  },
+  "dumplings": {
+    "calories": 330,
+    "protein_g": 14,
+    "sugar_g": 2,
+    "sodium_mg": 580,
+    "fat_g": 12,
+    "name": "dumplings"
+  },
+  "edamame": {
+    "calories": 120,
+    "protein_g": 11,
+    "sugar_g": 2,
+    "sodium_mg": 10,
+    "fat_g": 5,
+    "name": "edamame"
+  },
+  "eggs_benedict": {
+    "calories": 510,
+    "protein_g": 22,
+    "sugar_g": 3,
+    "sodium_mg": 880,
+    "fat_g": 34,
+    "name": "eggs benedict"
+  },
+  "escargots": {
+    "calories": 210,
+    "protein_g": 18,
+    "sugar_g": 0,
+    "sodium_mg": 340,
+    "fat_g": 13,
+    "name": "escargots"
+  },
+  "falafel": {
+    "calories": 330,
+    "protein_g": 13,
+    "sugar_g": 4,
+    "sodium_mg": 490,
+    "fat_g": 17,
+    "name": "falafel"
+  },
+  "filet_mignon": {
+    "calories": 340,
+    "protein_g": 32,
+    "sugar_g": 0,
+    "sodium_mg": 380,
+    "fat_g": 22,
+    "name": "filet mignon"
+  },
+  "fish_and_chips": {
+    "calories": 620,
+    "protein_g": 28,
+    "sugar_g": 3,
+    "sodium_mg": 860,
+    "fat_g": 32,
+    "name": "fish and chips"
+  },
+  "foie_gras": {
+    "calories": 490,
+    "protein_g": 11,
+    "sugar_g": 0,
+    "sodium_mg": 430,
+    "fat_g": 46,
+    "name": "foie gras"
+  },
+  "french_fries": {
+    "calories": 365,
+    "protein_g": 4,
+    "sugar_g": 1,
+    "sodium_mg": 420,
+    "fat_g": 17,
+    "name": "french fries"
+  },
+  "french_onion_soup": {
+    "calories": 250,
+    "protein_g": 12,
+    "sugar_g": 8,
+    "sodium_mg": 980,
+    "fat_g": 11,
+    "name": "french onion soup"
+  },
+  "french_toast": {
+    "calories": 330,
+    "protein_g": 10,
+    "sugar_g": 16,
+    "sodium_mg": 440,
+    "fat_g": 14,
+    "name": "french toast"
+  },
+  "fried_calamari": {
+    "calories": 310,
+    "protein_g": 20,
+    "sugar_g": 1,
+    "sodium_mg": 480,
+    "fat_g": 16,
+    "name": "fried calamari"
+  },
+  "fried_rice": {
+    "calories": 320,
+    "protein_g": 8,
+    "sugar_g": 2,
+    "sodium_mg": 710,
+    "fat_g": 10,
+    "name": "fried rice"
+  },
+  "frozen_yogurt": {
+    "calories": 160,
+    "protein_g": 4,
+    "sugar_g": 24,
+    "sodium_mg": 80,
+    "fat_g": 3,
+    "name": "frozen yogurt"
+  },
+  "garlic_bread": {
+    "calories": 290,
+    "protein_g": 7,
+    "sugar_g": 2,
+    "sodium_mg": 490,
+    "fat_g": 13,
+    "name": "garlic bread"
+  },
+  "gnocchi": {
+    "calories": 370,
+    "protein_g": 8,
+    "sugar_g": 2,
+    "sodium_mg": 330,
+    "fat_g": 5,
+    "name": "gnocchi"
+  },
+  "greek_salad": {
+    "calories": 190,
+    "protein_g": 5,
+    "sugar_g": 6,
+    "sodium_mg": 520,
+    "fat_g": 15,
+    "name": "greek salad"
+  },
+  "grilled_cheese_sandwich": {
+    "calories": 400,
+    "protein_g": 18,
+    "sugar_g": 4,
+    "sodium_mg": 760,
+    "fat_g": 22,
+    "name": "grilled cheese sandwich"
+  },
+  "grilled_salmon": {
+    "calories": 290,
+    "protein_g": 35,
+    "sugar_g": 0,
+    "sodium_mg": 310,
+    "fat_g": 15,
+    "name": "grilled salmon"
+  },
+  "guacamole": {
+    "calories": 150,
+    "protein_g": 2,
+    "sugar_g": 1,
+    "sodium_mg": 210,
+    "fat_g": 13,
+    "name": "guacamole"
+  },
+  "gyoza": {
+    "calories": 270,
+    "protein_g": 12,
+    "sugar_g": 2,
+    "sodium_mg": 490,
+    "fat_g": 11,
+    "name": "gyoza"
+  },
+  "hamburger": {
+    "calories": 540,
+    "protein_g": 28,
+    "sugar_g": 8,
+    "sodium_mg": 780,
+    "fat_g": 28,
+    "name": "hamburger"
+  },
+  "hot_and_sour_soup": {
+    "calories": 90,
+    "protein_g": 6,
+    "sugar_g": 3,
+    "sodium_mg": 940,
+    "fat_g": 3,
+    "name": "hot and sour soup"
+  },
+  "hot_dog": {
+    "calories": 390,
+    "protein_g": 14,
+    "sugar_g": 5,
+    "sodium_mg": 870,
+    "fat_g": 22,
+    "name": "hot dog"
+  },
+  "huevos_rancheros": {
+    "calories": 370,
+    "protein_g": 16,
+    "sugar_g": 6,
+    "sodium_mg": 680,
+    "fat_g": 20,
+    "name": "huevos rancheros"
+  },
+  "hummus": {
+    "calories": 170,
+    "protein_g": 8,
+    "sugar_g": 3,
+    "sodium_mg": 300,
+    "fat_g": 10,
+    "name": "hummus"
+  },
+  "ice_cream": {
+    "calories": 270,
+    "protein_g": 4,
+    "sugar_g": 28,
+    "sodium_mg": 90,
+    "fat_g": 14,
+    "name": "ice cream"
+  },
+  "lasagna": {
+    "calories": 380,
+    "protein_g": 22,
+    "sugar_g": 7,
+    "sodium_mg": 640,
+    "fat_g": 18,
+    "name": "lasagna"
+  },
+  "lobster_bisque": {
+    "calories": 290,
+    "protein_g": 14,
+    "sugar_g": 6,
+    "sodium_mg": 810,
+    "fat_g": 18,
+    "name": "lobster bisque"
+  },
+  "lobster_roll_sandwich": {
+    "calories": 430,
+    "protein_g": 24,
+    "sugar_g": 4,
+    "sodium_mg": 740,
+    "fat_g": 18,
+    "name": "lobster roll sandwich"
+  },
+  "macaroni_and_cheese": {
+    "calories": 430,
+    "protein_g": 16,
+    "sugar_g": 7,
+    "sodium_mg": 760,
+    "fat_g": 20,
+    "name": "macaroni and cheese"
+  },
+  "macarons": {
+    "calories": 380,
+    "protein_g": 5,
+    "sugar_g": 50,
+    "sodium_mg": 40,
+    "fat_g": 15,
+    "name": "macarons"
+  },
+  "miso_soup": {
+    "calories": 40,
+    "protein_g": 3,
+    "sugar_g": 1,
+    "sodium_mg": 860,
+    "fat_g": 1,
+    "name": "miso soup"
+  },
+  "mussels": {
+    "calories": 170,
+    "protein_g": 24,
+    "sugar_g": 0,
+    "sodium_mg": 370,
+    "fat_g": 4,
+    "name": "mussels"
+  },
+  "nachos": {
+    "calories": 490,
+    "protein_g": 16,
+    "sugar_g": 4,
+    "sodium_mg": 740,
+    "fat_g": 26,
+    "name": "nachos"
+  },
+  "omelette": {
+    "calories": 230,
+    "protein_g": 16,
+    "sugar_g": 1,
+    "sodium_mg": 390,
+    "fat_g": 17,
+    "name": "omelette"
+  },
+  "onion_rings": {
+    "calories": 380,
+    "protein_g": 5,
+    "sugar_g": 4,
+    "sodium_mg": 530,
+    "fat_g": 20,
+    "name": "onion rings"
+  },
+  "oysters": {
+    "calories": 110,
+    "protein_g": 11,
+    "sugar_g": 0,
+    "sodium_mg": 320,
+    "fat_g": 4,
+    "name": "oysters"
+  },
+  "pad_thai": {
+    "calories": 410,
+    "protein_g": 18,
+    "sugar_g": 10,
+    "sodium_mg": 820,
+    "fat_g": 14,
+    "name": "pad thai"
+  },
+  "paella": {
+    "calories": 390,
+    "protein_g": 24,
+    "sugar_g": 3,
+    "sodium_mg": 710,
+    "fat_g": 12,
+    "name": "paella"
+  },
+  "pancakes": {
+    "calories": 350,
+    "protein_g": 8,
+    "sugar_g": 18,
+    "sodium_mg": 500,
+    "fat_g": 13,
+    "name": "pancakes"
+  },
+  "panna_cotta": {
+    "calories": 250,
+    "protein_g": 4,
+    "sugar_g": 22,
+    "sodium_mg": 50,
+    "fat_g": 16,
+    "name": "panna cotta"
+  },
+  "peking_duck": {
+    "calories": 410,
+    "protein_g": 28,
+    "sugar_g": 8,
+    "sodium_mg": 680,
+    "fat_g": 24,
+    "name": "peking duck"
+  },
+  "pho": {
+    "calories": 350,
+    "protein_g": 24,
+    "sugar_g": 5,
+    "sodium_mg": 920,
+    "fat_g": 8,
+    "name": "pho"
+  },
+  "pizza": {
+    "calories": 285,
+    "protein_g": 12,
+    "sugar_g": 4,
+    "sodium_mg": 640,
+    "fat_g": 10,
+    "name": "pizza"
+  },
+  "pork_chop": {
+    "calories": 310,
+    "protein_g": 30,
+    "sugar_g": 0,
+    "sodium_mg": 380,
+    "fat_g": 18,
+    "name": "pork chop"
+  },
+  "poutine": {
+    "calories": 740,
+    "protein_g": 28,
+    "sugar_g": 4,
+    "sodium_mg": 920,
+    "fat_g": 40,
+    "name": "poutine"
+  },
+  "prime_rib": {
+    "calories": 480,
+    "protein_g": 38,
+    "sugar_g": 0,
+    "sodium_mg": 420,
+    "fat_g": 34,
+    "name": "prime rib"
+  },
+  "pulled_pork_sandwich": {
+    "calories": 520,
+    "protein_g": 30,
+    "sugar_g": 18,
+    "sodium_mg": 860,
+    "fat_g": 22,
+    "name": "pulled pork sandwich"
+  },
+  "ramen": {
+    "calories": 440,
+    "protein_g": 22,
+    "sugar_g": 4,
+    "sodium_mg": 1240,
+    "fat_g": 14,
+    "name": "ramen"
+  },
+  "ravioli": {
+    "calories": 350,
+    "protein_g": 15,
+    "sugar_g": 3,
+    "sodium_mg": 490,
+    "fat_g": 12,
+    "name": "ravioli"
+  },
+  "red_velvet_cake": {
+    "calories": 430,
+    "protein_g": 5,
+    "sugar_g": 42,
+    "sodium_mg": 360,
+    "fat_g": 22,
+    "name": "red velvet cake"
+  },
+  "risotto": {
+    "calories": 380,
+    "protein_g": 10,
+    "sugar_g": 2,
+    "sodium_mg": 520,
+    "fat_g": 14,
+    "name": "risotto"
+  },
+  "samosa": {
+    "calories": 310,
+    "protein_g": 7,
+    "sugar_g": 4,
+    "sodium_mg": 460,
+    "fat_g": 18,
+    "name": "samosa"
+  },
+  "sashimi": {
+    "calories": 130,
+    "protein_g": 22,
+    "sugar_g": 0,
+    "sodium_mg": 320,
+    "fat_g": 4,
+    "name": "sashimi"
+  },
+  "scallops": {
+    "calories": 175,
+    "protein_g": 23,
+    "sugar_g": 0,
+    "sodium_mg": 430,
+    "fat_g": 5,
+    "name": "scallops"
+  },
+  "seaweed_salad": {
+    "calories": 70,
+    "protein_g": 2,
+    "sugar_g": 4,
+    "sodium_mg": 420,
+    "fat_g": 3,
+    "name": "seaweed salad"
+  },
+  "shrimp_and_grits": {
+    "calories": 420,
+    "protein_g": 24,
+    "sugar_g": 3,
+    "sodium_mg": 780,
+    "fat_g": 18,
+    "name": "shrimp and grits"
+  },
+  "spaghetti_bolognese": {
+    "calories": 410,
+    "protein_g": 24,
+    "sugar_g": 6,
+    "sodium_mg": 580,
+    "fat_g": 14,
+    "name": "spaghetti bolognese"
+  },
+  "spaghetti_carbonara": {
+    "calories": 490,
+    "protein_g": 22,
+    "sugar_g": 2,
+    "sodium_mg": 620,
+    "fat_g": 24,
+    "name": "spaghetti carbonara"
+  },
+  "spring_rolls": {
+    "calories": 220,
+    "protein_g": 8,
+    "sugar_g": 3,
+    "sodium_mg": 420,
+    "fat_g": 10,
+    "name": "spring rolls"
+  },
+  "steak": {
+    "calories": 360,
+    "protein_g": 38,
+    "sugar_g": 0,
+    "sodium_mg": 340,
+    "fat_g": 20,
+    "name": "steak"
+  },
+  "strawberry_shortcake": {
+    "calories": 310,
+    "protein_g": 4,
+    "sugar_g": 28,
+    "sodium_mg": 180,
+    "fat_g": 14,
+    "name": "strawberry shortcake"
+  },
+  "sushi": {
+    "calories": 200,
+    "protein_g": 10,
+    "sugar_g": 8,
+    "sodium_mg": 480,
+    "fat_g": 3,
+    "name": "sushi"
+  },
+  "tacos": {
+    "calories": 380,
+    "protein_g": 18,
+    "sugar_g": 4,
+    "sodium_mg": 620,
+    "fat_g": 18,
+    "name": "tacos"
+  },
+  "takoyaki": {
+    "calories": 270,
+    "protein_g": 12,
+    "sugar_g": 4,
+    "sodium_mg": 540,
+    "fat_g": 11,
+    "name": "takoyaki"
+  },
+  "tiramisu": {
+    "calories": 380,
+    "protein_g": 7,
+    "sugar_g": 30,
+    "sodium_mg": 120,
+    "fat_g": 22,
+    "name": "tiramisu"
+  },
+  "tuna_tartare": {
+    "calories": 180,
+    "protein_g": 24,
+    "sugar_g": 1,
+    "sodium_mg": 410,
+    "fat_g": 8,
+    "name": "tuna tartare"
+  },
+  "waffles": {
+    "calories": 370,
+    "protein_g": 8,
+    "sugar_g": 14,
+    "sodium_mg": 530,
+    "fat_g": 16,
+    "name": "waffles"
+  }
+}
