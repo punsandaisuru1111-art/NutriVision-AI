@@ -1,0 +1,58 @@
+{
+  "diabetes": {
+    "avoid": [
+      "high sugar foods",
+      "white rice",
+      "fruit juice",
+      "soda",
+      "donuts"
+    ],
+    "limit": [
+      "white bread",
+      "pasta",
+      "potatoes",
+      "bananas"
+    ],
+    "safe": [
+      "vegetables",
+      "lean proteins",
+      "whole grains",
+      "nuts"
+    ],
+    "nutrient_limits": {
+      "sugar_g_per_meal": 15,
+      "carbs_g_per_meal": 45
+    }
+  },
+  "high_blood_pressure": {
+    "avoid": [
+      "high sodium foods",
+      "processed meats",
+      "fast food",
+      "pickles"
+    ],
+    "limit": [
+      "cheese",
+      "canned soups",
+      "salty snacks"
+    ],
+    "safe": [
+      "fruits",
+      "vegetables",
+      "whole grains",
+      "low-fat dairy"
+    ],
+    "nutrient_limits": {
+      "sodium_mg_per_day": 1500
+    }
+  },
+  "vitamin_d_deficiency": {
+    "recommended": [
+      "salmon",
+      "tuna",
+      "egg yolks",
+      "mushrooms",
+      "fortified milk"
+    ]
+  }
+}
